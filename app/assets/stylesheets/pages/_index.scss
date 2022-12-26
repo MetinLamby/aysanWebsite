@@ -1,2 +1,8 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "photos";
+@import "videos";
+
+p {
+    margin-bottom: 0px;
+}

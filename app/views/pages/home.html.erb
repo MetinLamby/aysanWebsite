@@ -1,2 +1,12 @@
-<h1 class="tester">Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="home-div">
+    <div id="images-div">
+        <%= image_tag ("testimage.jpg"), :class => "image" %>
+    </div>
+    <div id="buttons-div">
+        <div id="photos-div" class="div-one-part"><a href="<%= photos_path %>">photos</a></div>
+        <div id="videos-div" class="div-one-part"><a href="<%= videos_path %>">videos</a></div>
+    </div>
+    <div id="footer-div">
+        <p><a href = "mailto: metin.lamby@outlook.com">contact</a> | <a href="https://www.instagram.com/aysanlamby/?hl=en">instagram</a></p>
+    </div>
+</div>
