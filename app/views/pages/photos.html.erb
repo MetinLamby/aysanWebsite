@@ -1,1 +1,17 @@
-<h1 class="test">Pages#photos</h1>
+<a href="<%= root_path %>" class="back-btn">home</a>
+<div class="photos-div" data-controller="images" data-action="images#changeImageList">
+    <div class="text-div">
+        <ul>
+            <li><a href="<%= photos_newyork_path %>">01 New York Project</a></li>
+            <li><a href="<%= photos_wiesbaden_path %>">02 Wiesbaden</a></li>
+            <li>03 London</li>
+            <li>04 Paris</li>
+            <li>05 Tester</li>
+        </ul>
+    </div>
+    <div class="image-div">
+        <%= image_tag ("testimage.jpg"), :class => "image"%>
+        <%= image_tag ("food.jpg"), :class => "image"%>
+        <%= image_tag ("city.jpg"), :class => "image"%>
+    </div>
+</div>

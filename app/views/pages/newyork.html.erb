@@ -1,0 +1,18 @@
+<a href="<%= root_path %>" class="back-btn">home</a>
+
+<div class="photos-div">
+    <div class="text-div">
+        <ul>
+            <li><a href="<%= photos_newyork_path %>" style="color: blue !important;">01 New York Project</a></li>
+            <li><a href="<%= photos_wiesbaden_path %>">02 Wiesbaden</a></li>
+            <li>03 London</li>
+            <li>04 Paris</li>
+            <li>05 Tester</li>
+        </ul>
+    </div>
+    <div class="image-div">
+        <%= image_tag ("newyork1.jpg"), :class => "image"%>
+        <%= image_tag ("newyork2.jpg"), :class => "image"%>
+        <%= image_tag ("newyork3.jpg"), :class => "image"%>
+    </div>
+</div>

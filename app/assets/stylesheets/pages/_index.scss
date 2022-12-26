@@ -2,7 +2,41 @@
 @import "home";
 @import "photos";
 @import "videos";
+@import "newyork";
+@import "wiesbaden";
+
+
+@font-face {
+    //font-family: 'ABCDiatypeMono';
+    //src: url('assets/fonts/ABCDiatypeMono-Light.ttf');
+    font-family: 'ABCDiatypeMono';
+    src: url('assets/ABCDiatypeMono-Light');
+}
 
 p {
     margin-bottom: 0px;
+    font-family: "ABCDiatypeMono", sans-serif;
 }
+
+a {
+    font-family: "ABCDiatypeMono", sans-serif;
+    color: black;
+}
+
+li {
+    font-family: "ABCDiatypeMono", sans-serif;
+}
+
+h1 h2 {
+    font-family: "ABCDiatypeMono", sans-serif;
+}
+
+h3 h4 {
+    font-family: "ABCDiatypeMono", sans-serif;
+}
+
+h5 {
+    font-family: "ABCDiatypeMono", sans-serif;
+}
+
+

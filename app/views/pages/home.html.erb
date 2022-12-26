@@ -1,12 +1,36 @@
 <div id="home-div">
-    <div id="images-div">
-        <%= image_tag ("testimage.jpg"), :class => "image" %>
+    <div id="images-div" class="slideshow">
+        <%= image_tag ("testimage.jpg"), :class => "image", :style => "display: block"%>
+        <%= image_tag ("testimageTwo.jpg"), :class => "image", :style => "display: none" %>
     </div>
     <div id="buttons-div">
         <div id="photos-div" class="div-one-part"><a href="<%= photos_path %>">photos</a></div>
         <div id="videos-div" class="div-one-part"><a href="<%= videos_path %>">videos</a></div>
     </div>
-    <div id="footer-div">
-        <p><a href = "mailto: metin.lamby@outlook.com">contact</a> | <a href="https://www.instagram.com/aysanlamby/?hl=en">instagram</a></p>
-    </div>
 </div>
+
+<script>
+// Get the slideshow container
+  var slideshow = document.querySelector('.slideshow');
+
+  // Get the images
+  var images = slideshow.querySelectorAll('img');
+
+  // Set the index to the first image
+  var index = 0;
+
+  // Set the interval for the slideshow
+  var interval = setInterval(showNextImage, 3000);
+
+  function showNextImage() {
+      // Hide the current image
+      images[index].style.display = 'none';
+
+      // Increment the index
+      index = (index + 1) % images.length;
+
+      // Show the next image
+      images[index].style.display = 'block';
+  }
+</script>
+

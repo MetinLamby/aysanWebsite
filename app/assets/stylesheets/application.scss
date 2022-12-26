@@ -10,3 +10,19 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-div {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    position: sticky;
+}
