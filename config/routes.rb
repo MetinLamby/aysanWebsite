@@ -3,8 +3,11 @@ Rails.application.routes.draw do
 
   get "videos", to: "pages#videos"
   get "photos", to: "pages#photos"
-  get "photos/newyork", to: "pages#newyork"
-  get "photos/wiesbaden", to: "pages#wiesbaden"
+  get "photos/ardaarman", to: "pages#ardaarman"
+  get "photos/brandon", to: "pages#brandon"
+  get "photos/nyc", to: "pages#nyc"
+  get "photos/salomon", to: "pages#salomon"
+
 
 
 
